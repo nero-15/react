@@ -168,12 +168,7 @@ function App() {
 function Comment(props) {
   return (
     <div className="Comment">
-      <div className="UserInfo">
-        <Avatar user={props.author} />
-        <div className="UserInfo-name">
-          {props.author.name}
-        </div>
-      </div>
+      <UserInfo prop={props.author}/>
       <div className="Comment-text">
         {props.text}
       </div>
@@ -193,9 +188,19 @@ function Avatar(props) {
   );
 }
 
+function UserInfo(props) {
+  return (
+    <div className="UserInfo">
+      <Avatar user={props.user} />
+      <div className="UserInfo-name">
+        {props.user.name}
+      </div>
+    </div>
+  );
+}
 
 ReactDOM.render(
-  <App />,
+  <Comment author={name: "takuya", avatarUrl: "https://placekitten.com/g/64/64"} text="コメント" date={new Date()} />,
   document.getElementById('root')
 );
 
