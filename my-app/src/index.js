@@ -165,10 +165,14 @@ function App() {
   );
 }
 
+function formatDate(date) {
+  return date.toLocaleDateString();
+}
+
 function Comment(props) {
   return (
     <div className="Comment">
-      <UserInfo prop={props.author}/>
+      <UserInfo user={props.author}/>
       <div className="Comment-text">
         {props.text}
       </div>
@@ -199,8 +203,17 @@ function UserInfo(props) {
   );
 }
 
+const comment = {
+  date: new Date(),
+  text: 'コメント',
+  author: {
+    name: 'takuya',
+    avatarUrl: 'https://placekitten.com/g/64/64',
+  },
+};
+
 ReactDOM.render(
-  <Comment author={name: "takuya", avatarUrl: "https://placekitten.com/g/64/64"} text="コメント" date={new Date()} />,
+  <Comment author={comment.author} text={comment.text} date={comment.date} />,
   document.getElementById('root')
 );
 
