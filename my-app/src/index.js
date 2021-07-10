@@ -558,7 +558,9 @@ class Calculator extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Calculator  />,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <Calculator  />,
+//   document.getElementById('root')
+// );
+
+// https://ja.reactjs.org/docs/composition-vs-inheritance.html
