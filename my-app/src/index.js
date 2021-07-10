@@ -466,6 +466,13 @@ class FlavorForm extends React.Component {
 // );
 
 // https://ja.reactjs.org/docs/lifting-state-up.html
+function BoilingVerdict(props) {
+  if (props.celsius >= 100) {
+    return <p>The water would boil.</p>;
+  }
+  return <p>The water would not boil.</p>;
+}
+
 const scaleNames = {
   c: 'Celsius',
   f: 'Fahrenheit'
