@@ -365,3 +365,5 @@ ReactDOM.render(
   <LoginControl />,
   document.getElementById('root')
 );
+
+// https://ja.reactjs.org/docs/lists-and-keys.html
