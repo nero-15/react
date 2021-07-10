@@ -222,6 +222,7 @@ class Clock extends React.Component {
         super(props);
         this.state = {date: new Date()};
     }
+
     render() {
         return (
             <div>
