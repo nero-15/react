@@ -361,9 +361,12 @@ class LoginControl extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <LoginControl />,
+//   document.getElementById('root')
+// );
 
 // https://ja.reactjs.org/docs/lists-and-keys.html
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((number) => number * 2);
+console.log(doubled);
