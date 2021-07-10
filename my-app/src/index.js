@@ -361,7 +361,27 @@ class LoginControl extends React.Component {
   }
 }
 
+// ReactDOM.render(
+//   <LoginControl />,
+//   document.getElementById('root')
+// );
+
+// https://ja.reactjs.org/docs/lists-and-keys.html
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    <li key={number.toString()}>
+      {number}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
-  <LoginControl />,
+  <NumberList numbers={numbers} />,
   document.getElementById('root')
 );
