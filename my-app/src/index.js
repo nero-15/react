@@ -250,9 +250,7 @@ class Clock extends React.Component {
     }
 }
 
-function tick() {
-  ReactDOM.render(
-     <Clock />,
-      document.getElementById('root')
-  );
-}
+ReactDOM.render(
+   <Clock />,
+    document.getElementById('root')
+);
