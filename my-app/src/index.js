@@ -460,7 +460,9 @@ class FlavorForm extends React.Component {
     );
   }
 }
-ReactDOM.render(
-  <FlavorForm  />,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <FlavorForm  />,
+//   document.getElementById('root')
+// );
+
+// https://ja.reactjs.org/docs/lifting-state-up.html
