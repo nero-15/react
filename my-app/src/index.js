@@ -387,10 +387,12 @@ const numbers = [1, 2, 3, 4, 5];
 // );
 
 // https://ja.reactjs.org/docs/forms.html
-class NameForm extends React.Component {
+class EssayForm  extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      value: 'Please write an essay about your favorite DOM element.'
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -409,8 +411,8 @@ class NameForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          EssayForm :
+          <textarea value={this.state.value} onChange={this.handleChange} />
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -419,6 +421,6 @@ class NameForm extends React.Component {
 }
 
 ReactDOM.render(
-  <NameForm />,
+  <EssayForm  />,
   document.getElementById('root')
 );
