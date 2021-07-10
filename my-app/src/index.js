@@ -165,6 +165,7 @@ function App() {
   );
 }
 
+// https://ja.reactjs.org/docs/components-and-props.html
 function formatDate(date) {
   return date.toLocaleDateString();
 }
@@ -217,6 +218,7 @@ const comment = {
 //   document.getElementById('root')
 // );
 
+// https://ja.reactjs.org/docs/state-and-lifecycle.html
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -250,7 +252,7 @@ class Clock extends React.Component {
     }
 }
 
-ReactDOM.render(
-   <Clock />,
-    document.getElementById('root')
-);
+// ReactDOM.render(
+//    <Clock />,
+//     document.getElementById('root')
+// );
