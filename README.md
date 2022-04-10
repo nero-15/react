@@ -1,5 +1,3 @@
 # react
-
-react学習用。
-
-https://ja.reactjs.org/
+https://ja.reactjs.org/  
+react学習用
